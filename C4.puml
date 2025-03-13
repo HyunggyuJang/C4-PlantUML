@@ -1283,6 +1283,7 @@ hide stereotype
 
 !procedure LAYOUT_AS_SKETCH()
   skinparam handwritten true
+  !option handwritten true
 !if $SKETCH_BG_COLOR > ""
   skinparam backgroundColor $SKETCH_BG_COLOR
 !endif
