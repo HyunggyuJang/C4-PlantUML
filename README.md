@@ -90,7 +90,7 @@ If you want to use the always up-to-date version of the C4-PlantUML library in t
 
 [comment]: # ("!include followed with 2 spaces that it is not replaced during release based branch updates")
 ```plantuml
-!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include  https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 ```
 
 If you don't need the up-to-date version, PlantUML includes the last released `C4_...` files as [standard library C4](https://plantuml.com/stdlib#062f75176513a666) \(no additional files or Internet is required). You can use it with following:
@@ -107,7 +107,7 @@ After you have included `C4_Container.puml` you can use the defined macro defini
 
 ```plantuml
 @startuml C4_Elements
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 Person(personAlias, "Label", "Optional Description")
 Container(containerAlias, "Label", "Technology", "Optional Description")
@@ -125,7 +125,7 @@ Take a look at the following sample of a C4 Container Diagram:
 
 ```plantuml
 @startuml Basic Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, "Sample System") {
@@ -144,7 +144,7 @@ Entities can also be decorated with icons/sprites using the $sprite parameter, f
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
@@ -172,7 +172,7 @@ Similar to icons/sprites is it possible to add links to all elements and relatio
 
 ```plantuml
 @startuml Basic Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 Person(admin, "Administrator", $sprite="person2", $link="https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/LayoutOptions.md#hide_person_sprite-or-show_person_spritesprite")
 System_Boundary(c1, "Sample System", $link="https://github.com/plantuml-stdlib/C4-PlantUML") {
@@ -195,7 +195,7 @@ Elements and relationships can be decorated with tags and explained via a calcul
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 AddElementTag("v1.0", $borderColor="#d73027")
 AddElementTag("v1.1", $fontColor="#d73027")
@@ -231,7 +231,7 @@ SHOW_LEGEND()
 
 ### System Context & System Landscape diagrams
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Context.puml`
   - Macros:
     - `Person(alias, label, ?descr, ?sprite, ?tags, ?link, ?type)`
     - `Person_Ext(alias, label, ?descr, ?sprite, ?tags, ?link, ?type)`
@@ -254,7 +254,7 @@ SHOW_LEGEND()
 
 ### Container diagram
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml`
   - Additional Macros  (based on context diagram macros):
     - `Container(alias, label, ?techn, ?descr, ?sprite, ?tags, ?link, ?baseShape)`
     - `ContainerDb(alias, label, ?techn, ?descr, ?sprite, ?tags, ?link)`
@@ -266,7 +266,7 @@ SHOW_LEGEND()
 
 ### Component diagram
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Component.puml`
   - Additional Macros (based on container diagram macros):
     - `Component(alias, label, ?techn, ?descr, ?sprite, ?tags, ?link, ?baseShape)`
     - `ComponentDb(alias, label, ?techn, ?descr, ?sprite, ?tags, ?link)`
@@ -277,7 +277,7 @@ SHOW_LEGEND()
 
 ### Dynamic diagram
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Dynamic.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Dynamic.puml`
   - Additional Macros (based on component diagram macros):
     - (lowercase) `increment($offset=1)`: increase current index (procedure which has no direct output)
     - (lowercase) `setIndex($new_index)`: set the new index (procedure which has no direct output)
@@ -294,7 +294,7 @@ SHOW_LEGEND()
 
 ### Deployment diagram
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Deployment.puml`
   - Additional Macros (based on **container** diagram macros):
     - `Deployment_Node(alias, label, ?type, ?descr, ?sprite, ?tags, ?link)`
     - `Node(alias, label, ?type, ?descr, ?sprite, ?tags, ?link)`: short name of Deployment_Node()
@@ -308,7 +308,7 @@ but existing elements and relationships can be reused as participants and calls 
 
 > **!!! Contrary to all other diagrams, please define boundaries without `{` and `}` and mark a boundary end with `Boundary_End()` !!!**
 
-  - Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Sequence.puml`
+  - Import: `!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Sequence.puml`
   - Macros (based on **component** diagram macros):
     - Basically all element specific macros (Person, System, Container...) can be reused with following differences:
       - element descriptions are typically not displayed (can be activated via SHOW_ELEMENT_DESCRIPTIONS())
@@ -358,7 +358,7 @@ In following sample a person uses different systems, and a group of persons whic
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 HIDE_STEREOTYPE()
 
 Person(a, "A")
@@ -400,7 +400,7 @@ In following sample a person uses different systems, and a group of persons whic
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 HIDE_STEREOTYPE()
 
 Person(a, "A")
@@ -439,7 +439,7 @@ In following sample the floating legend should be in the left bottom corner of t
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
@@ -490,7 +490,7 @@ C4-PlantUML offers predefined person and robot sprites which can be directly use
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Component.puml
 
 Person(pB, "Sam", $sprite="person2")
 Person_Ext(pA, "Bob", $sprite="person")
@@ -517,7 +517,7 @@ Color of the displayed images can be changed with `,color={color}`.
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 'stdlib users.puml defines sprite "users"
 !include <office/users/users.puml>
@@ -549,7 +549,7 @@ Relationship specific sprites are typically smaller and therefore following opti
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Context.puml
 
 Person(user, "User")
 Person(user1, "User 1")
@@ -678,7 +678,7 @@ Only the legend title cannot be changed. Therefore, the following call is added 
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 UpdateElementStyle(person, $fontColor="green")
 AddElementTag("v1.0", $fontColor="#d73027", $borderColor="#d73027")
@@ -724,7 +724,7 @@ SHOW_LEGEND(false)
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 !define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
 !include osaPuml/Common.puml
@@ -783,7 +783,7 @@ SHOW_LEGEND()
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Component.puml
 
 ' Update the generic boundary style and the "system", "enterprise", "container" boundaries styles too
 UpdateBoundaryStyle($bgColor="gold", $fontColor="brown", $borderColor="brown")
@@ -836,7 +836,7 @@ If the corresponding section is stored in a separate file then it can be reused 
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Context.puml
 
 ' <<<<< this section could be stored in a separate file and reused in all other diagrams too
 ' it defines new default colors, different default sprites and legend 
@@ -893,7 +893,7 @@ Following sample uses all 3 different property definitions (and the aligned depl
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Deployment.puml
 
 ' default header Property, Value
 AddProperty("Name", "Flash")
@@ -933,7 +933,7 @@ C4-PlantUML offers version information like PlantUML with its `%version()` call.
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 
 ' existing plantuml version as text
 %version()

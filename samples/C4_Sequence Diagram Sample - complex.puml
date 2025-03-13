@@ -1,6 +1,6 @@
 @startuml
-!theme C4_united from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Sequence.puml
+!theme C4_united from https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/themes
+!include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Sequence.puml
 
 Person(Alice, "Alice")
 Person(Bob, "Bob")

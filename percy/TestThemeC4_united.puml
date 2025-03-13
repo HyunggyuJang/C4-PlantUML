@@ -7,13 +7,13 @@
   ' !theme C4_FirstTest from %get_variable_value("RELATIVE_INCLUDE")/themes
   !theme $UseTheme from ./../themes
 !else
-  !theme $UseTheme from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+  !theme $UseTheme from https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/themes
 !endif
 
 !if %variable_exists("RELATIVE_INCLUDE")
   !include %get_variable_value("RELATIVE_INCLUDE")/C4_Container.puml
 !else
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+  !include https://raw.githubusercontent.com/HyunggyuJang/C4-PlantUML/feature/patch-handwritten-error/C4_Container.puml
 !endif
 
 ' LAYOUT_LEFT_RIGHT()
